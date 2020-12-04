@@ -31,8 +31,8 @@ body {
     &__text {
     }
 }
-//======SECTION===NEW===
-.new {
+//общий контейнер для одинаковых блоков
+.box {
     &__inner {
         display: flex;
         align-items: center;
@@ -44,9 +44,6 @@ body {
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-    }
-    &__body{
-
     }
     &__title {
         font-size: 24px;
@@ -62,17 +59,38 @@ body {
         font-size: 18px;
         font-weight: 700;
         line-height: 1.5;
-        color:#fff;
+        color: #fff;
         border-color: #006cea;
         border-radius: 30px;
         background-color: #006cea;
         padding: 14px 30px;
     }
     &__img {
+        width: 50%;
         padding: 15px;
         img {
-            width: 480px;
-            object-fit: cover;
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
     }
 }
+
+.master-class {
+    &__inner {
+        text-align: center;
+        padding: 15px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
